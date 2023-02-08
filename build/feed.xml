@@ -5,14 +5,91 @@
     <description>devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Feb 2023 17:28:19 +0900</pubDate>
-    <lastBuildDate>Wed, 08 Feb 2023 17:28:19 +0900</lastBuildDate>
+    <pubDate>Thu, 09 Feb 2023 08:54:30 +0900</pubDate>
+    <lastBuildDate>Thu, 09 Feb 2023 08:54:30 +0900</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
 
+    
+      <item>
+        <title>[React]Suspense</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;어쩌다 리액트 Suspense까지 타고 오게 됐는지 모르겠지만, Suspense가 대체 뭔지 몰라서 찾아보다가 쓰게 된 github.io 블로그 첫 포스트! &lt;br /&gt;
+Suspense에 대해 생각보다 잘 정리된 글이 없어 내가 찾아본 여러 자료를 참고하여 이해한 플로우대로 정리해보고자 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;suspense-란&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Suspense&lt;/code&gt; 란?&lt;/h1&gt;
+
+&lt;p&gt;React &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Suspense&lt;/code&gt;는 코드 스플리팅을 위해 등장한 컴포넌트이다. &lt;br /&gt;
+React 16 버전부터 React.lazy와 연계해서 사용했다. &lt;br /&gt;
+(&lt;strong&gt;코드 스플리팅&lt;/strong&gt;이란, 네트워크를 통해 받아오는 javascript를 앱 구동에 필요한 만큼만 다운로드 받아올 수 있게 잘게 나누는 것을 말한다.) &lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lazy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Suspense&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AvatarComponent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lazy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./AvatarComponent&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;renderLoader&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Loading&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/p&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;DetailsComponent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Suspense&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fallback&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;renderLoader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;AvatarComponent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Suspense&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;16버전에서의-suspense&quot;&gt;16버전에서의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Suspense&lt;/code&gt;&lt;/h1&gt;
+
+&lt;p&gt;16버전에서는 다음과 같은 한계점이 있었다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SSR에서는 Suspense를 지원하지 않았다.&lt;/li&gt;
+  &lt;li&gt;Suspense가 소개된 이후, Apollo, Relay 등을 이용해 data fetching 전 fallback UI를 보여주는 용도로 사용할 수 있었지만 캐싱 지원의 불안정함으로 인해 권장하지 않았다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;React 18 버전이 나오면서, SSR에서도 Suspense를 지원하게 되었다.&lt;/p&gt;
+
+&lt;h1 id=&quot;csr-ssr&quot;&gt;CSR, SSR&lt;/h1&gt;
+
+&lt;p&gt;여기서 다시 살펴보는 CSR, SSR!&lt;/p&gt;
+
+&lt;h2 id=&quot;csr&quot;&gt;CSR&lt;/h2&gt;
+
+&lt;p&gt;CSR은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Client Side Rendering&lt;/code&gt;의 약자로, 클라이언트에서 초기 화면 로드를 위해 서버에 요청을 보내면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;서버&lt;/code&gt;는 요청을 받아 클라이언트에게 HTML과 Javascript를 보내준다. &lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;클라이언트&lt;/code&gt;는 그것(HTML과 React로 짜여진 Javascript 코드)을 받아 브라우저에서 React의 Javascript 코드를 실행하여 렌더링을 시작한다.&lt;/p&gt;
+
+&lt;p&gt;서버에서 HTML, Javascript를 전달해준 후 브라우저가 Javascript를 실행하기 전까지 브라우저에는 아무것도 없기 때문에, 초기 로딩 시간이 오래 걸린다. &lt;br /&gt;
+따라서 환경이 안좋을 경우 유저는 웹사이트의 빈 화면을 볼 확률이 높다.&lt;/p&gt;
+
+&lt;h2 id=&quot;ssr&quot;&gt;SSR&lt;/h2&gt;
+
+&lt;p&gt;SSR은 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Server Side Rendering&lt;/code&gt;의 약자로, 클라이언트에서 초기 화면 로드를 위해 서버에 요청을 보내면 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;서버&lt;/code&gt;는 React 코드를 실행하여 화면에 표시하는데 필요한 데이터와 CSS를 모두 삽입한 HTML을 클라이언트에게 보내준다. &lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;클라이언트&lt;/code&gt;는 흰 화면 대신 브라우저에서 꽉 채워져있는 HTML을 미리 보여주며 React의 Javascript를 로딩 및 실행시켜 인터랙션을 추가한다. &lt;br /&gt;
+( &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;서버&lt;/code&gt;에서 HTML에 넣어둔 React의 Javascript와 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;클라이언트&lt;/code&gt;에서 전달받은 React의 Javascript를 비교 및 그리는 과정을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hydration&lt;/code&gt;이라고 한다. ) &lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 08 Feb 2023 18:05:23 +0900</pubDate>
+        <link>http://localhost:4000/react/2023/02/08/react-suspense/</link>
+        <guid isPermaLink="true">http://localhost:4000/react/2023/02/08/react-suspense/</guid>
+      </item>
     
 
     
       
+        
+      
+    
+      
+        
+          <item>
+            <title>Guides</title>
+            <description>&lt;h5&gt; Posts by Category : Guides &lt;/h5&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+
+ &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;08 Feb 2023&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;/react/2023/02/08/react-suspense/&quot;&gt;[React]Suspense&lt;/a&gt;&lt;/li&gt;
+
+&lt;/div&gt;
+</description>
+            <link>http://localhost:4000/blog/categories/React/</link>
+          </item>
         
       
     
@@ -26,6 +103,21 @@
 
 &lt;div id=&quot;categories&quot;&gt;
 
+  &lt;div class=&quot;category-box&quot;&gt;
+    
+    &lt;div id=&quot;#React&quot;&gt;&lt;/div&gt;
+    &lt;h4 class=&quot;category-head&quot;&gt;&lt;a href=&quot;/blog/categories/React&quot;&gt;React&lt;/a&gt;&lt;/h4&gt;
+    &lt;a name=&quot;React&quot;&gt;&lt;/a&gt;
+     
+    &lt;article class=&quot;center&quot;&gt;
+      &lt;h6&gt;&lt;a href=&quot;/react/2023/02/08/react-suspense/&quot;&gt;[React]Suspense&lt;/a&gt;&lt;/h6&gt;
+    &lt;/article&gt;
+
+
+    
+
+  &lt;/div&gt;
+
 &lt;/div&gt;
 
 </description>
@@ -36,22 +128,6 @@
     
       
     
-      
-    
-      
-        
-          <item>
-            <title>Guides</title>
-            <description>&lt;h5&gt; Posts by Category : {{ page.title }} &lt;/h5&gt;
-
-&lt;div class=&quot;card&quot;&gt;
-{% for post in site.categories.guides %}
- &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
-{% endfor %}
-&lt;/div&gt;</description>
-            <link>http://localhost:4000/blog/categories/guides/</link>
-          </item>
-        
       
     
       
@@ -235,22 +311,6 @@ You can visit the blog using [http://your-github-username.github.io](http://your
 
 </description>
             <link>http://localhost:4000/get-started/</link>
-          </item>
-        
-      
-    
-      
-        
-          <item>
-            <title>Jekyll</title>
-            <description>&lt;h5&gt; Posts by Category : {{ page.title }} &lt;/h5&gt;
-
-&lt;div class=&quot;card&quot;&gt;
-{% for post in site.categories.jekyll %}
- &lt;li class=&quot;category-posts&quot;&gt;&lt;span&gt;{{ post.date | date_to_string }}&lt;/span&gt; &amp;nbsp; &lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/li&gt;
-{% endfor %}
-&lt;/div&gt;</description>
-            <link>http://localhost:4000/blog/categories/jekyll/</link>
           </item>
         
       
