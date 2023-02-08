@@ -6,8 +6,8 @@ author: hyerin
 date: "2023-02-08 14:35:23 +0530"
 category: React
 thumbnail: /assets/img/posts/230208_thumbnail.jpg
-keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
-permalink: /blog/welcome-to-devlopr-jekyll/
+keywords: React, CSR, SSR
+permalink:
 usemathjax: true
 ---
 
