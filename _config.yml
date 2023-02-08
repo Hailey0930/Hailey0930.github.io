@@ -28,31 +28,31 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 # Experiences
 author_work_experiences:
   - company_name: 4DReplay
-    company_logo: google.png
+    company_logo: 4dlogo.png
     company_url: https://4dreplay.com/ko/
     designation: Frontend Developer
-    description: Web Frontend Developer in Platform team
+    description: Web Frontend Developer
     visibility: true
 
 # Education
 author_education_details:
-  - college_logo: mit.png
+  - college_logo: codeCampLogo.png
     college_name: 코드캠프
-    college_url: https://mit.org
+    college_url: https://codebootcamp.co.kr/
     college_degree:
     description: 코드캠프 프론트엔드 오프라인 8기
     visibility: true
 
-  - college_logo: mit.png
-    college_name: 연세대학교 원주캠퍼스
-    college_url: https://mit.org
-    college_degree: bachelor's degree
+  - college_logo: yonseiLogo.jpeg
+    college_name: 연세대학교 미래캠퍼스
+    college_url: https://www.yonsei.ac.kr/wj/
+    college_degree:
     description: Business Administration
     visibility: true
 
 # Projects
 author_project_details:
-  - project_thumbnail: gamershub.png
+  - project_thumbnail: lookatme.png
     project_title: Look At Me
     project_description: 2030 심리상담 플랫폼
     project_url:
