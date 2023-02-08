@@ -16,9 +16,9 @@ urls:
     url: /blog
 
 # Edit Author details (For multi authors check _data/authors.yml)
-author_logo: profile.png
+author_logo: profile.jpg
 author: Hyerin Jeon
-author_bio: Hi, I am Hyerin Jeon(Hailey)!
+author_bio: 안녕하세요, 전혜린 (Hailey) 입니다! 주니어 프론트엔드 개발자이며, 리액트를 사용하고 있습니다 :D
 author_email: "juju0930@naver.com"
 author_location: South Korea
 author_website_url: "https://Hailey0930.github.io"
@@ -27,28 +27,35 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 
 # Experiences
 author_work_experiences:
-  - company_name: Google
+  - company_name: 4DReplay
     company_logo: google.png
-    company_url: https://google.com
-    designation: Software Engineer
-    description: Worked on various Google Products
+    company_url: https://4dreplay.com/ko/
+    designation: Frontend Developer
+    description: Web Frontend Developer in Platform team
     visibility: true
 
 # Education
 author_education_details:
   - college_logo: mit.png
-    college_name: MIT
+    college_name: 코드캠프
     college_url: https://mit.org
-    college_degree: CS Engineer
-    description: Bachelor of Technology
+    college_degree:
+    description: 코드캠프 프론트엔드 오프라인 8기
+    visibility: true
+
+  - college_logo: mit.png
+    college_name: 연세대학교 원주캠퍼스
+    college_url: https://mit.org
+    college_degree: bachelor's degree
+    description: Business Administration
     visibility: true
 
 # Projects
 author_project_details:
   - project_thumbnail: gamershub.png
-    project_title: Gamers Hub
-    project_description: A Platform built for Gamers and Game Devs
-    project_url: https://gamershub.in
+    project_title: Look At Me
+    project_description: 2030 심리상담 플랫폼
+    project_url:
     visibility: true
 
 # social links
@@ -61,7 +68,7 @@ instagram_username: hye._.rin___
 hyvor_talk_website_id: 476
 
 # wakatime username (coding activity)
-wakatime_username: sujaykundu777
+wakatime_username: Hailey0930
 
 # mailchimp embedded form url (newsletter):
 mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
