@@ -23,7 +23,7 @@ author_email: "juju0930@naver.com"
 author_location: South Korea
 author_website_url: "https://Hailey0930.github.io"
 typewrite-text: I'm a junior frontend developer :D
-hero_cover_img: cover.jpeg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
+hero_cover_img: background.jpeg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
