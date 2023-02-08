@@ -5,8 +5,8 @@
     <description>devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 09 Feb 2023 08:54:30 +0900</pubDate>
-    <lastBuildDate>Thu, 09 Feb 2023 08:54:30 +0900</lastBuildDate>
+    <pubDate>Thu, 09 Feb 2023 08:56:30 +0900</pubDate>
+    <lastBuildDate>Thu, 09 Feb 2023 08:56:30 +0900</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
 
     
@@ -79,8 +79,8 @@ React 16 버전부터 React.lazy와 연계해서 사용했다. &lt;br /&gt;
       
         
           <item>
-            <title>Guides</title>
-            <description>&lt;h5&gt; Posts by Category : Guides &lt;/h5&gt;
+            <title>React</title>
+            <description>&lt;h5&gt; Posts by Category : React &lt;/h5&gt;
 
 &lt;div class=&quot;card&quot;&gt;
 

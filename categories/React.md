@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Guides
+title: React
 permalink: /blog/categories/React/
 ---
 
