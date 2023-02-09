@@ -2,15 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/blog/authors/johndoe</loc>
-<lastmod>2023-02-09T10:10:16+09:00</lastmod>
+<lastmod>2023-02-09T15:17:01+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/authors/xplor4r</loc>
-<lastmod>2023-02-09T10:10:16+09:00</lastmod>
+<lastmod>2023-02-09T15:17:01+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/react/2023/02/08/react-suspense/</loc>
 <lastmod>2023-02-08T18:05:23+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0%20%EC%99%84%EC%84%B1%EA%B9%8C%EC%A7%80,%20%ED%94%84%EB%9F%B0%ED%8A%B8%EC%97%94%EB%93%9C/2023/02/09/%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0%EC%99%84%EC%84%B1%EA%B9%8C%EC%A7%80/</loc>
+<lastmod>2023-02-09T04:46:23+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/categories/React/</loc>
@@ -50,6 +54,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/styleguide/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/categories/%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0%20%EC%99%84%EC%84%B1%EA%B9%8C%EC%A7%80,%20%ED%94%84%EB%9F%B0%ED%8A%B8%EC%97%94%EB%93%9C/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/admin/</loc>
