@@ -5,8 +5,8 @@
     <description>devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 17 Feb 2023 14:47:00 +0900</pubDate>
-    <lastBuildDate>Fri, 17 Feb 2023 14:47:00 +0900</lastBuildDate>
+    <pubDate>Fri, 17 Feb 2023 15:49:41 +0900</pubDate>
+    <lastBuildDate>Fri, 17 Feb 2023 15:49:41 +0900</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
 
     
@@ -1198,18 +1198,7 @@ Line 2`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
 &lt;h4 id=&quot;산술-연산자&quot;&gt;산술 연산자&lt;/h4&gt;
 
-&lt;p&gt;산술 연산자는 말 그대로 숫자 연산에 필요한 연산자를 의미한다.
-|연산자|수행 연산|피연산자 개수|결합 방향|예제|예제 결과|
-|—-|————|———–|———-|———-|——-|
-|+|덧셈|2|좌-&amp;gt;우|&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1+2&lt;/code&gt;|3|
-|-|뺄셈|2|좌-&amp;gt;우|&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2-1&lt;/code&gt;|1|
-|*|곱셈|2|좌-&amp;gt;우|&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1*2&lt;/code&gt;|2|
-|/|나눗셈|2|좌-&amp;gt;우|&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4/2&lt;/code&gt;|2|
-|%|나머지|2|좌-&amp;gt;우|&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;5%2&lt;/code&gt;|3|
-|++|전치, 후치 증가&lt;br /&gt;(단항 연산)|1|우-&amp;gt;좌&lt;br /&gt;좌-&amp;gt;우 | &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const a = 1;&lt;/code&gt;&lt;br /&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;++a, a++&lt;/code&gt;| 2, 1|
-|–|전치, 후치 감소&lt;br /&gt;(단항 연산)|1|우-&amp;gt;좌&lt;br /&gt;좌-&amp;gt;우 |&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const a = 1;&lt;/code&gt;&lt;br /&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--a, a--&lt;/code&gt;| 0, 1|
-|+단항|피연산자 값을 숫자로 변환|1|우-&amp;gt;좌|&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const a = &apos;1&apos;;&lt;/code&gt;&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+a&lt;/code&gt;|1|
-|-단항|피연산자 값의 부호를 변경|1|우-&amp;gt;좌| &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const a = &apos;1&apos;;&lt;/code&gt;&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-a&lt;/code&gt;|-1|&lt;/p&gt;
+&lt;p&gt;산술 연산자는 말 그대로 숫자 연산에 필요한 연산자를 의미한다.&lt;/p&gt;
 
 &lt;p&gt;연산자들을 사용한 대부분의 표현식들은 부수 효과가 없다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a+3&lt;/code&gt;과 같은 덧셈 연산을 해도 a의 값을 변경하지는 않으며 단지 덧셈 연사의 값이 평가되어 반환될 뿐이다. 하지만 전치, 후치 증감 연산자는 부수 효과를 가진 연산자이다.&lt;/p&gt;
 
@@ -1248,13 +1237,15 @@ Line 2`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;단항 + 연산자&lt;/code&gt; : 단항 + 연산자는 피연산자가 숫자로 변환할 수 없는 문자열일 때 결과값으로 NaN을 반환한다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;// 위의 할당문은 아래와 동일하다.&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt;
-
-&lt;span class=&quot;o&quot;&gt;-+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// 위의 단항 연산자는 아래처럼 우측부터 평가를 진행한다.&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;z&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// 위의 단항 연산자는 아래처럼 우측부터 평가를 진행한다.&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
@@ -1280,7 +1271,7 @@ Line 2`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
     &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;amp;&amp;amp;, ||, ! 연산자&lt;/code&gt;&lt;/p&gt;
 
     &lt;ul&gt;
-      &lt;li&gt;AND 연산자(&amp;amp;&amp;amp;) : 피연산자가 모두 참으로 평가될 때 참으로 평가된다. 피연산자 x는 truthy 값이므로 참으로 평가되지만, 우측 비교 연사의 결과값이 거짓으로 평가되어 결과값으로 false를 반환한다.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AND 연산자(&amp;amp;&amp;amp;)&lt;/code&gt; : 피연산자가 모두 참으로 평가될 때 참으로 평가된다. 피연산자 x는 truthy 값이므로 참으로 평가되지만, 우측 비교 연사의 결과값이 거짓으로 평가되어 결과값으로 false를 반환한다.&lt;/li&gt;
     &lt;/ul&gt;
 
     &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -1291,17 +1282,7 @@ Line 2`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
     &lt;ul&gt;
-      &lt;li&gt;
-        &lt;table&gt;
-          &lt;tbody&gt;
-            &lt;tr&gt;
-              &lt;td&gt;OR 연산자(&lt;/td&gt;
-              &lt;td&gt; &lt;/td&gt;
-              &lt;td&gt;) : 피연산자가 모두 거짓으로 평가될 때만 거짓으로 평가되며, 피연산자 중 하나라도 참으로 평가되는 값이 있다면 참으로 평가된다. x가 truthy 값이기 때문에 결과값으로 true를 반환한다.&lt;/td&gt;
-            &lt;/tr&gt;
-          &lt;/tbody&gt;
-        &lt;/table&gt;
-      &lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OR 연산자(||)&lt;/code&gt; : 피연산자가 모두 거짓으로 평가될 때만 거짓으로 평가되며, 피연산자 중 하나라도 참으로 평가되는 값이 있다면 참으로 평가된다. x가 truthy 값이기 때문에 결과값으로 true를 반환한다.&lt;/li&gt;
     &lt;/ul&gt;
 
     &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -1312,7 +1293,7 @@ Line 2`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
     &lt;ul&gt;
-      &lt;li&gt;NOT 연산자(!) : 단항 연산자로 피연산자의 불리언 값을 반대로 반전시킨다. NOT 연산자는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!!&lt;/code&gt; 처럼 연속해서 사용하기도 하는데, 이런 연산을 부정을 두 번 한다고 해서 이중 부정 연산자라고 부른다. 주로 기존 값을 불리언 타입으로 변환할 때 사용한다.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NOT 연산자(!)&lt;/code&gt; : 단항 연산자로 피연산자의 불리언 값을 반대로 반전시킨다. NOT 연산자는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;!!&lt;/code&gt; 처럼 연속해서 사용하기도 하는데, 이런 연산을 부정을 두 번 한다고 해서 이중 부정 연산자라고 부른다. 주로 기존 값을 불리언 타입으로 변환할 때 사용한다.&lt;/li&gt;
     &lt;/ul&gt;
 
     &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -1336,6 +1317,16 @@ Line 2`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;관계형-연산자&quot;&gt;관계형 연산자&lt;/h4&gt;
+
+&lt;p&gt;코드를 작성하다 보면 두 피연산자의 관계를 검증하고 싶을 때가 있다. 두 값이 같은지 한 값이 다른 값보다 큰지 검사해 관계가 성립하는지 알아보는 것이다. 이럴 때 사용하는 연산을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;관계형 연산&lt;/code&gt;이라고 한다. 관계형 연산의 결과는 항상 불리언 값이며, 주로 조건문이나 반복문 내의 조건을 정의할 때 사용된다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;비교 연산자&lt;/code&gt; : 비교연산자는 수학에서 익숙하게 접했던 연산자이다. 두 피연산자 값의 상대적인 순서를 판단하며 &lt;strong&gt;숫자(Number 또는 BigInt)와 문자열의 순서만 비교할 수 있다.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// true&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ab&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 16 Feb 2023 22:38:00 +0900</pubDate>
         <link>http://localhost:4000/%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0%20%EC%99%84%EC%84%B1%EA%B9%8C%EC%A7%80,%20%ED%94%84%EB%9F%B0%ED%8A%B8%EC%97%94%EB%93%9C/2023/02/16/%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0%EC%99%84%EC%84%B1%EA%B9%8C%EC%A7%80/</link>
