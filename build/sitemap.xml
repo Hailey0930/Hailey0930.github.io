@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/blog/authors/johndoe</loc>
-<lastmod>2023-02-22T14:27:02+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/authors/xplor4r</loc>
-<lastmod>2023-02-22T14:27:02+09:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/react/2023/02/08/react-suspense/</loc>
 <lastmod>2023-02-08T18:05:23+09:00</lastmod>
 </url>
@@ -35,6 +27,10 @@
 <url>
 <loc>http://localhost:4000/git/2023/02/20/submodule/</loc>
 <lastmod>2023-02-20T11:20:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/frontendbook/2023/02/23/%EA%B8%B0%EC%B4%88%EB%B6%80%ED%84%B0%EC%99%84%EC%84%B1%EA%B9%8C%EC%A7%80/</loc>
+<lastmod>2023-02-23T13:48:00+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/categories/Git/</loc>
